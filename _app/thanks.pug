@@ -1,0 +1,39 @@
+-var path = '../';
+-var head_url = 'https://children-camp.mastervision.su/thanks/';
+-var head_title = 'Вы зарегистрированны на мастер-класс «Летний онлайн-лагерь»';
+//- -var head_description = '2-дневный онлайн-мастер-класс';
+//- -var head_img = 'img/banner.jpg';
+-var styles = path+'css/thanks.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+//- -var scripts = path+'js/scripts.min.js';
+//- -var action = '';
+//- -var group = '';
+//- -var formId = '';
+//- -var formVc = '';
+
+-var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin b(cl,href,p,target,id)
+	a.button(class=cl href=href target=target id=id)=p
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main
+			.container
+				include pug/base/header
+				h1.main-title Вы зарегистрированны на мастер-класс
+					span «Летний онлайн-лагерь»
+				h2.main-subtitle Поставьте себе напоминание на телефон, чтобы обязательно посетить мастер-класс 
+					span 8-9 июня, 19:00 (мск)
+		include pug/base/footer.pug
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

@@ -1,0 +1,102 @@
+@import 'base/fonts'
+
+@import '../_css/bootstrap.min.css'
+
+@import 'base/base'
+
+@import 'base/header'
+
+#main
+	padding 0 0 60px
+	min-height calc(100vh - 146px)
+	text-align center
+	.container
+		position relative
+		&:after
+			content: ''
+			display block
+			// position absolute
+			width 252px
+			height 89px
+			background-image url(../img/icons/waves.png)
+			background-repeat no-repeat
+			background-position: center
+			background-size contain
+			left 0
+			right 0
+			margin 30px auto 0
+.main-title
+	font-size: 32px
+	font-family: FB
+	font-weight: bold
+	margin-bottom: 30px
+	span
+		display block
+		color MO
+.main-subtitle
+	font-size: 24px
+	span
+		color MO
+		font-family: FB
+		font-weight: bold
+		display inline-block
+
+@import 'base/footer'
+
+@media screen and (min-width 2295px)
+	body
+		font-size: 20px
+	.container
+		width 1400px
+	header
+		margin-bottom: 100px
+@media screen and (max-width 767px)
+	header
+		margin-bottom: 15px
+	.header-logo
+		float: none
+		margin 0 auto 5px
+		display block
+	.contacts
+		float: none
+		text-align center
+	.contact
+		line-height: 1
+		display inline-block
+	.main-title
+		font-size: 28px
+	.main-subtitle
+		font-size: 22px
+@media screen and (max-width 485px)
+	header
+		margin-bottom: 5px
+	.header-logo
+		width 80px
+		margin-bottom: 0
+	.contacts
+		line-height: 1
+	.contact
+		font-size: 14px
+	.main-title
+		font-size: 26px
+		line-height: 1.1
+		margin-bottom: 20px
+	.main-subtitle
+		font-size: 20px
+	footer
+		padding 15px 0
+		h5
+			font-size: 18px
+	.soc-buttons a
+		margin 10px 5px
+@media screen and (max-width 385px)
+	header
+		margin-bottom: 0
+	.main-title
+		font-size: 24px
+		margin-bottom: 10px
+	.main-subtitle
+		font-size: 18px
+	#main .container:after
+		width 220px
+		height 60px

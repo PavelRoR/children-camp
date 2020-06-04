@@ -2,16 +2,19 @@ section#main
 	.container
 		include ../base/header
 		.row
-			.col-md-6.col-sm-6
+			.col-md-7.col-sm-8
 				h1.main-title Территория детства «Летний онлайн-лагерь»
 				h2.main-subtitle Самое продуктивное времяпровождение для детей в интернете!
 				p.main-info Даты: 
-					span 8-9 июня  19:00 (мск)
+					span 8-9 июня, 19:00 (мск)
 				p.main-info Авторы: 
 					span Игорь Романец и Илья Исаков
-				form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-main
+		form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-main
+			.row
+				.col-md-4
 					h3.form-title.switch-title Спешите записаться
 					p.switch-text.hide
+				.col-md-8
 					.email-block.email-block-form
 						input( type="hidden" value="1" name="required_fields[email]")
 						input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="Ваш email")
@@ -23,10 +26,10 @@ section#main
 						label(for="check-1").check-label Я согласен с 
 							a(href="https://mastervision.su/politics.pdf" target="_blank") условиями обработки
 							|  персональных данных по 152 - Ф3
-					div(style="display: none;")
-						#formTypeSpecificVars-1(style="display: none;")
-							input(type="hidden" value=group id="form_newsletter_id_newsletter_1" name="Contact[id_newsletter]")
-						<!-- API код канала рекламы -->
-						input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page_1" name="Contact[id_advertising_channel_page]")
-						input(type="hidden" name="formId" value=formId)
-						input(type="hidden" name="formVc" value=formVc)
+				div(style="display: none;")
+					#formTypeSpecificVars-1(style="display: none;")
+						input(type="hidden" value=group id="form_newsletter_id_newsletter_1" name="Contact[id_newsletter]")
+					<!-- API код канала рекламы -->
+					input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page_1" name="Contact[id_advertising_channel_page]")
+					input(type="hidden" name="formId" value=formId)
+					input(type="hidden" name="formVc" value=formVc)
