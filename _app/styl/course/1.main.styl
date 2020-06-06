@@ -1,0 +1,48 @@
+#main
+	padding 0 0 60px
+	background-color: #F7F3F3
+	text-align center
+	overflow hidden
+	// background-image url(../img/backs/main.png)
+	// background-repeat no-repeat
+	// background-position: top right
+	// background-size: contain
+	.container
+		position relative
+		&:before
+		&:after
+			content: ''
+			display block
+			position absolute
+			width 252px
+			height 89px
+			background-image url(../img/icons/waves.png)
+			background-repeat no-repeat
+			background-position: center
+			background-size contain
+			left -100px
+			bottom: 300px
+		&:after
+			left auto
+			right -100px
+.main-title
+	font-size: 50px
+	font-family: FB
+	font-weight: bold
+	color #330e0b
+.main-subtitle
+	font-size: 27px
+	font-family: FB
+	font-weight: bold
+	color: MO
+	margin 20px 0
+.main-info
+	font-size: 20px
+	font-family: FB
+	font-weight: bold
+	color #330e0b
+	span
+		display inline-block
+		color MO
+.button-main
+	margin 40px auto 0

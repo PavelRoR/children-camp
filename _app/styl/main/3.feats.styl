@@ -6,11 +6,20 @@
 	background-size: 100% auto
 	position relative
 	.container
-		@extend #main .container
+		position relative
 		&:before
+			content: ''
+			display block
+			position absolute
+			width 252px
+			height 89px
+			background-image url(../img/icons/waves.png)
+			background-repeat no-repeat
+			background-position: center
+			background-size contain
 			left auto
-			right 0
 			bottom: -90px
+			right 0
 .features-back
 	position absolute
 	z-index 0
